@@ -35,6 +35,7 @@ const randomNumber2El = document.getElementById("random-number-2");
 const randomNumber3El = document.getElementById("random-number-3");
 const randomNumber4El = document.getElementById("random-number-4");
 const randomNumber5El = document.getElementById("random-number-5");
+const randomUserNumberEl = document.getElementById("user-random-number");
 
 const randomNumber1 = randomNumber1El.Value;
 const randomNumber2 = randomNumber2El.Value;
@@ -43,6 +44,7 @@ const randomNumber4 = randomNumber4El.Value;
 const randomNumber5 = randomNumber5El.Value;
 
 // * PROCEDURA
+// ! ELABORAZIONE
 /* genero 5 numeri casuali */
 let numberGenerator1 = Math.floor(Math.random() * 100 + 1);
 let numberGenerator2 = Math.floor(Math.random() * 100 + 1);
@@ -56,6 +58,17 @@ randomNumber3El.innerText = numberGenerator3;
 randomNumber4El.innerText = numberGenerator4;
 randomNumber5El.innerText = numberGenerator5;
 
-// ! ELABORAZIONE
+/* genero il timer di 30 secondi */
+setTimeout(generateInputNumber, 30000);
+
+randomUserNumberEl.addEventListener("submit", generateInputNumber);
+
+function generateInputNumber() {
+  randomNumber1El.innerText = "";
+  randomNumber2El.innerText = "";
+  randomNumber3El.innerText = "";
+  randomNumber4El.innerText = "";
+  randomNumber5El.innerText = "";
+}
 
 // ! OUTPUT
