@@ -46,9 +46,11 @@ const randomNumber5 = randomNumber5El.Value;
 /* genero 5 numeri casuali */
 let numberGenerator = Math.floor(Math.random() * 100 + 1);
 
-numberGenerator = randomNumber1;
-
 randomNumber1El.innerText = numberGenerator;
+randomNumber2El.innerText = numberGenerator;
+randomNumber3El.innerText = numberGenerator;
+randomNumber4El.innerText = numberGenerator;
+randomNumber5El.innerText = numberGenerator;
 
 // ! ELABORAZIONE
 
