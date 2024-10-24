@@ -37,6 +37,21 @@ const randomNumber4El = document.getElementById("random-number-4");
 const randomNumber5El = document.getElementById("random-number-5");
 const randomUserNumberEl = document.getElementById("user-random-number");
 
+/* genero gli elementi dell'imput dell'utente */
+const inputNumber1El = document.getElementById("number-input-1");
+const inputNumber2El = document.getElementById("number-input-2");
+const inputNumber3El = document.getElementById("number-input-3");
+const inputNumber4El = document.getElementById("number-input-4");
+const inputNumber5El = document.getElementById("number-input-5");
+
+/* imposto gli input in display-none */
+document.getElementById("number-input-1").style.display = "none";
+document.getElementById("number-input-2").style.display = "none";
+document.getElementById("number-input-3").style.display = "none";
+document.getElementById("number-input-4").style.display = "none";
+document.getElementById("number-input-5").style.display = "none";
+
+/* valori degli elementi */
 const randomNumber1 = randomNumber1El.Value;
 const randomNumber2 = randomNumber2El.Value;
 const randomNumber3 = randomNumber3El.Value;
@@ -61,14 +76,36 @@ randomNumber5El.innerText = numberGenerator5;
 /* genero il timer di 30 secondi */
 setTimeout(generateInputNumber, 30000);
 
+/* genero l'evento */
 randomUserNumberEl.addEventListener("submit", generateInputNumber);
 
+if (
+  "number-input-1" === numberGenerator1 &&
+  "number-input-2" === numberGenerator2 &&
+  "number-input-3" === numberGenerator3 &&
+  "number-input-4" === numberGenerator4 &&
+  "number-input-5" === numberGenerator5
+) {
+  alert("Complimenti! Hai indovinato!");
+} else {
+  alert("Non hai indovinato nessun numero. Riprova!");
+}
+
+/* genero la funzione */
 function generateInputNumber() {
+  /* i numeri generati si cancellano */
   randomNumber1El.innerText = "";
   randomNumber2El.innerText = "";
   randomNumber3El.innerText = "";
   randomNumber4El.innerText = "";
   randomNumber5El.innerText = "";
+
+  /* gli input diventano display-block */
+  document.getElementById("number-input-1").style.display = "block";
+  document.getElementById("number-input-2").style.display = "block";
+  document.getElementById("number-input-3").style.display = "block";
+  document.getElementById("number-input-4").style.display = "block";
+  document.getElementById("number-input-5").style.display = "block";
 }
 
 // ! OUTPUT
