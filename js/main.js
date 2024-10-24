@@ -44,13 +44,17 @@ const randomNumber5 = randomNumber5El.Value;
 
 // * PROCEDURA
 /* genero 5 numeri casuali */
-let numberGenerator = Math.floor(Math.random() * 100 + 1);
+let numberGenerator1 = Math.floor(Math.random() * 100 + 1);
+let numberGenerator2 = Math.floor(Math.random() * 100 + 1);
+let numberGenerator3 = Math.floor(Math.random() * 100 + 1);
+let numberGenerator4 = Math.floor(Math.random() * 100 + 1);
+let numberGenerator5 = Math.floor(Math.random() * 100 + 1);
 
-randomNumber1El.innerText = numberGenerator;
-randomNumber2El.innerText = numberGenerator;
-randomNumber3El.innerText = numberGenerator;
-randomNumber4El.innerText = numberGenerator;
-randomNumber5El.innerText = numberGenerator;
+randomNumber1El.innerText = numberGenerator1;
+randomNumber2El.innerText = numberGenerator2;
+randomNumber3El.innerText = numberGenerator3;
+randomNumber4El.innerText = numberGenerator4;
+randomNumber5El.innerText = numberGenerator5;
 
 // ! ELABORAZIONE
 
