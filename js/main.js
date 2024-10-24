@@ -36,7 +36,19 @@ const randomNumber3El = document.getElementById("random-number-3");
 const randomNumber4El = document.getElementById("random-number-4");
 const randomNumber5El = document.getElementById("random-number-5");
 
+const randomNumber1 = randomNumber1El.Value;
+const randomNumber2 = randomNumber2El.Value;
+const randomNumber3 = randomNumber3El.Value;
+const randomNumber4 = randomNumber4El.Value;
+const randomNumber5 = randomNumber5El.Value;
+
 // * PROCEDURA
+/* genero 5 numeri casuali */
+let numberGenerator = Math.floor(Math.random() * 100 + 1);
+
+numberGenerator = randomNumber1;
+
+randomNumber1El.innerText = numberGenerator;
 
 // ! ELABORAZIONE
 
