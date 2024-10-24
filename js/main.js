@@ -27,3 +27,17 @@ Consigli del giorno
 > Individuate gli elementi di cui avete bisogno per realizzare il programma.
 > Immaginate la logica come fosse uno snack: "Dati 2 array di numeri, 
 indica quali e quanti numeri ci sono in comune tra i due array" */
+
+// ! RACCOLTA DATI
+/* genero gli elementi con l'ID */
+const randomNumber1El = document.getElementById("random-number-1");
+const randomNumber2El = document.getElementById("random-number-2");
+const randomNumber3El = document.getElementById("random-number-3");
+const randomNumber4El = document.getElementById("random-number-4");
+const randomNumber5El = document.getElementById("random-number-5");
+
+// * PROCEDURA
+
+// ! ELABORAZIONE
+
+// ! OUTPUT
